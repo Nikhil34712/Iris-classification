@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body bgcolor="#d4a3ae">
+
+        <center>
+            <h1> IRIS FLOWER DETECTION </h1><br>
+
+            <form method="POST" action="{{ url_for('home') }}">
+                <div>
+                    <b> 
+                        SepalLengthCm: <input type='text' name='a' placeholder='enter in cm'><br><br>
+                        SepalWidthCm: <input type='text' name='b' placeholder='enter in cm'><br><br>
+                        PetalLengthCm: <input type='text' name='c' placeholder='enter in cm'><br><br>
+                        PetalWidthCm: <input type='text' name='d' placeholder='enter in cm'><br><br><br>
+                    </b>
+                    <input type="submit" value='predict'>
+                </div>
+            </form>
+            
+        </center>
+         
+    </body>
+</html>
