@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('iri.pkl', 'rb'))
+model = pickle.load(open('iris.pkl', 'rb'))
 
 @app.route('/')
 def welcome():
