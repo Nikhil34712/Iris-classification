@@ -40,4 +40,4 @@ jobs:
       - name: Pull and run Docker image
         run: |
           docker pull ${{ secrets.DOCKER_USERNAME }}/iris-classification:latest
-          docker run -d -p 5000:5000 --name iris-classification ${{ secrets.DOCKER_USERNAME }}/iris-classification:latest
+          docker run -d -p 8080:5000 --name iris-classification ${{ secrets.DOCKER_USERNAME }}/iris-classification:latest
